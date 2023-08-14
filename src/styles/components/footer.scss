@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  width: 100%;
+  content: "";
+  background-color: $secondary-color;
+  font-weight: 300;
+  color: $primary-color;
+  .footer__container {
+    position: relative;
+    z-index: 10;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    @include media(">=tablet") {
+      padding: 4em;
+      flex-direction: row;
+    }
+    .footer__container__logo {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 80px;
+      @include media(">=tablet") {
+        width: 200px;
+      }
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        display: inline-block !important;
+        font-size: xx-large;
+        font-weight: 700;
+      }
+    }
+    .footer__container__item {
+      padding: 1em 0;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 0.75em;
+      }
+      a,
+      span {
+        font-size: 14px;
+        margin-top: 0.5em;
+        color: $primary-color;
+        text-decoration: none;
+        @include media(">=tablet") {
+          font-size: 16px;
+        }
+      }
+      .footer__container__item__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include media(">=tablet") {
+          grid-template-columns: 1fr;
+        }
+      }
+      .footer__container__item__list_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        #footer_address {
+          width: 220px;
+          .br_sm {
+            display: block;
+            @include media(">=tablet") {
+              display: none;
+            }
+          }
+        }
+        #footer_linkedn {
+          width: 120px;
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+  .footer__container > * {
+    @include media(">=tablet") {
+      margin-right: 10%;
+    }
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: block;
+    position: absolute;
+    background: $secondary-color;
+  }
+}
+.footer_infobar {
+  position: relative;
+  background-color: #D6D6D6;
+  width: 100%;
+  font-size: 12px;
+  @include media(">=desktop") {
+    font-size: 14px;
+  }
+  .footer_infobar__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 1em 2em;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 12px;
+      @include media(">=tablet") {
+        font-size: 14px;
+      }
+    }
+    p {
+      color: $primary-color;
+      font-size: 12px;
+      @include media(">=tablet") {
+        font-size: 14px;
+      }
+    }
+  }
+}

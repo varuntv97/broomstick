@@ -1,0 +1,29 @@
+.button_dark {
+  padding: 1em 2em;
+  background-color: $primary-color;
+  border-radius: 10px;
+  border: 2px solid $primary-color;
+  border-color: $primary-color;
+  color: $tirnary-color;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: $tirnary-color;
+    color: $primary-color;
+  }
+}
+
+.button_light {
+  padding: 1em 2em;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  border: 2px solid $secondary-color;
+  border-color: $secondary-color;
+  color: $primary-color;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}

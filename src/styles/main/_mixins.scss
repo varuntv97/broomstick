@@ -1,0 +1,12 @@
+@mixin margin-auto($ym:0){
+    margin: $ym auto;
+}
+
+@mixin normal-padding{
+    @include media('>=phone'){
+        padding:2em;
+    }
+    @include media('>=desktop'){
+        padding:3em 4em;
+    }
+}

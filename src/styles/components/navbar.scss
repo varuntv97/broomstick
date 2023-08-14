@@ -1,0 +1,139 @@
+.navbar {
+  z-index: 500;
+  min-width: 100%;
+  // position: absolute;
+  overflow-x: hidden;
+  .navbar_container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar_logo {
+      min-width: 140px;
+      width: 160px;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        display: inline-block !important;
+        font-size: 50px;
+      }
+    }
+    .navbar_content {
+      display: none;
+      white-space: nowrap;
+      @include media(">=desktop") {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 4em;
+        a {
+          margin-left: 2em;
+          color: $primary-color;
+          text-decoration: none;
+          display: inline-block !important;
+          transition: text-shadow 0.2s;
+          font-size: x-large;
+        }
+        a:hover {
+          text-shadow: 0 0 0.25px $primary-color, 0 0 0.25px $primary-color;
+          // opacity: 0.7;
+        }
+        button {
+          margin-left: 2em;
+        }
+      }
+    }
+    .hamburger {
+      all: unset;
+      cursor: pointer;
+      width: 40px;
+      display: block;
+      @include media(">=desktop") {
+        display: none;
+      }
+    }
+    nav {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $secondary-color;
+    }
+    .menuOpen {
+      display: absolute;
+    }
+    .menuClosed {
+      display: none;
+    }
+  }
+}
+.mobile_navbar {
+  transition: all 0.3s ease-in-out;
+  z-index: 900;
+  height: 100%;
+  position: fixed;
+  z-index: 800;
+  // background-image: repeating-linear-gradient(
+  //   to top,
+  //   #f95503 10px,
+  //   $primary-color 30px
+  // );
+  top: 0;
+  right: 0;
+  .navbar_container {
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 3em;
+    @include media(">=tablet") {
+      padding: 4em;
+    }
+    @include media(">=desktop") {
+      display: none;
+    }
+    .navbar_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        width: 160px;
+      }
+      .close_nav {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .navbar_links {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        margin-bottom: 1em;
+        white-space: nowrap;
+        font-size: 28px;
+        @include media(">=tablet") {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    background: linear-gradient(180deg, $secondary-color 90%, transparent);
+  }
+}
+.isOpened {
+  width: 100%;
+}
+.isClosed {
+  padding: 0 !important;
+  width: 0;
+}

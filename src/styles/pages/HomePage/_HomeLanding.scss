@@ -1,0 +1,80 @@
+.home_landing_section {
+  overflow: hidden;
+  .home_landing_container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: $max-width;
+    height: calc(90vh - 2em);
+    .home_landing_image {
+      .large {
+        display: none;
+        @include media(">=desktop") {
+          display: block;
+          margin-top: -15%;
+        }
+      }
+      .medium {
+        display: none;
+        @include media("<desktop", ">=tablet") {
+          display: block;
+        }
+      }
+      .small {
+        display: none;
+        @include media("<tablet") {
+          display: block;
+        }
+      }
+    }
+    .home_landing_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between !important;
+      align-items: center !important;
+      color: $primary-color;
+      width: $max-width;
+      margin-top: -20%;
+      @include media(">=tablet") {
+        align-items: center;
+        text-align: center;
+      }
+      .home_landing_content__left {
+        h2 {
+          font-weight: 400;
+          font-size: 42px;
+          @include media(">=tablet") {
+            font-size: 40px;
+          }
+          @include media(">=desktop") {
+            font-size: 70px;
+          }
+        }
+      }
+      .home_landing_content__right {
+        padding-right: 10rem;
+        button {
+          font-size: 14px;
+          @include media(">=tablet") {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .home_landing_sub_content {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      text-align: center;
+      margin: 4em 0;
+      h4 {
+        font-size: xx-large;
+        strong {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
