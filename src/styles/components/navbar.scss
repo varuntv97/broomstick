@@ -18,6 +18,9 @@
         text-decoration: none;
         display: inline-block !important;
         font-size: 50px;
+        @include media ('<tablet'){
+          font-size: 30px;
+        }
       }
     }
     .navbar_content {

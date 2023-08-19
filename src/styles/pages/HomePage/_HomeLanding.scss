@@ -4,16 +4,18 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: $max-width;
     height: calc(90vh - 2em);
+    @include media(">=desktop") {
+      width: $max-width;
+    }
     .home_landing_image {
       .large {
+        margin-top: -15%;
         display: none;
         @include media(">=desktop") {
           display: block;
-          margin-top: -15%;
         }
       }
       .medium {
@@ -26,25 +28,33 @@
         display: none;
         @include media("<tablet") {
           display: block;
+          transform: scale(0.9);
+          margin-top: -25%;
         }
       }
     }
     .home_landing_content {
       display: flex;
       flex-direction: row;
-      justify-content: space-between !important;
+      justify-content: space-around !important;
       align-items: center !important;
       color: $primary-color;
-      width: $max-width;
       margin-top: -20%;
+      @include media(">=desktop") {
+        width: $max-width;
+      }
       @include media(">=tablet") {
         align-items: center;
         text-align: center;
       }
+      @include media("<tablet") {
+        flex-direction: column;
+      }
       .home_landing_content__left {
         h2 {
-          font-weight: 400;
-          font-size: 42px;
+          font-weight: 900;
+          font-size: 35px;
+          line-height: 1.2em;
           @include media(">=tablet") {
             font-size: 40px;
           }
@@ -55,24 +65,44 @@
       }
       .home_landing_content__right {
         padding-right: 10rem;
-        button {
+        .button {
+          display: block;
           font-size: 14px;
-          @include media(">=tablet") {
-            font-size: 16px;
+          @include media("<tablet") {
+            display: none;
           }
         }
       }
     }
     .home_landing_sub_content {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: end;
+      align-items: center;
       text-align: center;
-      margin: 4em 0;
+      .button {
+        display: none;
+      }
+      @include media(">=desktop") {
+        width: $max-width;
+      }
+      @include media("<tablet") {
+        padding: 15px;
+        margin-top: -15%;
+        .button {
+          display: block;
+          margin-top: 1.5em;
+          // padding: 0.5em 1em !important;
+        }
+      }
       h4 {
-        font-size: xx-large;
+        font-size: 35px;
+        line-height: 1.25em;
         strong {
           font-weight: 900;
+        }
+        @include media("<tablet") {
+          font-size: 20px;
         }
       }
     }

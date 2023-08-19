@@ -89,7 +89,7 @@ export default function Footer() {
       <div className="footer_infobar">
         <div className="footer_infobar__container">
           <p>Copyright © 2023</p>
-          <a href="https://www.google.com/" target="_blank">
+          <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
             Privacy Policy
           </a>
         </div>
