@@ -68,7 +68,7 @@ function HomeProductSpotlight() {
     <>
       <div className="spotLight_container">
         <div className="spotLight_wrapper">
-          <h1>Product Spotlight</h1>
+          <h1 className="sectionHeading">Product Spotlight</h1>
           <div className="spotLight_list">
             {spotlightList.map((item, index) => {
               const image = data.allFile.nodes.find(
@@ -86,8 +86,12 @@ function HomeProductSpotlight() {
                       <GatsbyImage image={imageData} alt={item.title} />
                     </div>
                     <div className="spotLight_item__right">
-                      <h1>{item.title}</h1>
-                      <h4>{item.paragraph}</h4>
+                      <h1 className="spotLight_item__right___title">
+                        {item.title}
+                      </h1>
+                      <h4 className="spotLight_item__right___paragraph">
+                        {item.paragraph}
+                      </h4>
                     </div>
                   </div>
                 </div>
