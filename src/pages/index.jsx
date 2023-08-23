@@ -4,6 +4,7 @@ import HomeLanding from "./HomePage/HomeLanding"
 import '../styles/pages/HomePage/HomePage.scss'
 import HomeProductSpotlight from "./HomePage/HomeProductSpotlight"
 import HomeUntoldStory from "./HomePage/HomeUntoldStory"
+import HomeProductFeature2 from "./HomePage/HomeProductFeature2"
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <HomeLanding/>
       <HomeProductSpotlight/>
       <HomeUntoldStory/>
+      <HomeProductFeature2/>
     </Layout>
   )
 }

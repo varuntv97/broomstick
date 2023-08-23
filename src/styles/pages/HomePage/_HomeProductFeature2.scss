@@ -1,0 +1,10 @@
+.productFeature_container{
+    overflow: hidden;
+    .productFeature_wrapper{
+        margin: 0 auto;
+        height: calc(90vh - 2em);
+        @include media (">=desktop"){
+            max-width: $max-width;
+        }
+    }
+}

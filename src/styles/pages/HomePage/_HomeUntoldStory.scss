@@ -1,7 +1,35 @@
-.untoldStory_container{
-    overflow: hidden;
-    max-width: $max-width;
-    background-color: $secondary-color;
-    height: 50vh;
-    margin: 0 auto;
+.untoldStory_container {
+  overflow: hidden;
+  background-color: $secondary-color;
+//   height: 50vh;
+  .untoldStory_wrapper {
+    margin: 20px auto;
+    @include media(">=desktop") {
+      max-width: $max-width;
+    }
+    .sectionHeading {
+      font-weight: bolder;
+      text-align: center;
+      margin: 20px 0;
+      @include media(">=desktop") {
+        font-size: 45px;
+        margin: 10px 0px;
+      }
+      @include media("<tablet") {
+        font-size: 30px;
+      }
+    }
+    .videoWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .video {
+        background-color: white;
+        @include media(">=desktop") {
+          height: 40vh;
+          width: 60vw;
+        }
+      }
+    }
+  }
 }
