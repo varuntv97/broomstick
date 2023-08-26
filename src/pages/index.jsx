@@ -5,6 +5,7 @@ import '../styles/pages/HomePage/HomePage.scss'
 import HomeProductSpotlight from "./HomePage/HomeProductSpotlight"
 import HomeUntoldStory from "./HomePage/HomeUntoldStory"
 import HomeProductFeature2 from "./HomePage/HomeProductFeature2"
+import HomeBackedBy from "./HomePage/HomeBackedBy"
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <HomeProductSpotlight/>
       <HomeUntoldStory/>
       <HomeProductFeature2/>
+      <HomeBackedBy/>
     </Layout>
   )
 }
