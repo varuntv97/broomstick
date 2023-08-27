@@ -9,6 +9,7 @@
       font-weight: 700;
       text-align: center;
       @include media(">=desktop") {
+        margin-top: 1em;
         font-size: 34px;
       }
       @include media("<tablet") {
