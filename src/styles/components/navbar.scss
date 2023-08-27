@@ -6,7 +6,7 @@
   .navbar_container {
     max-width: $max-width;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +17,7 @@
         color: $primary-color;
         text-decoration: none;
         display: inline-block !important;
-        font-size: 50px;
+        font-size: 34px;
         @include media ('<tablet'){
           font-size: 30px;
         }
@@ -37,7 +37,7 @@
           text-decoration: none;
           display: inline-block !important;
           transition: text-shadow 0.2s;
-          font-size: x-large;
+          font-size: 18px;
         }
         a:hover {
           text-shadow: 0 0 0.25px $primary-color, 0 0 0.25px $primary-color;
@@ -74,19 +74,18 @@
 .mobile_navbar {
   transition: all 0.3s ease-in-out;
   z-index: 900;
-  height: 100%;
+  height: 100vh;
   position: fixed;
-  z-index: 800;
   // background-image: repeating-linear-gradient(
   //   to top,
-  //   #f95503 10px,
+  //   $secondary-color 10px,
   //   $primary-color 30px
   // );
   top: 0;
   right: 0;
   .navbar_container {
     height: 100%;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 0 5px rgba(136, 124, 124, 0.3);
     padding: 3em;
     @include media(">=tablet") {
       padding: 4em;

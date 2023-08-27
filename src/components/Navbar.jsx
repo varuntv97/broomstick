@@ -37,9 +37,6 @@ export default function Navbar() {
           </div>
           {/* desktop */}
           <div className="navbar_content">
-            <Link to="/#" className="content_link">
-              Scientific Cleaning
-            </Link>
             <Link to="/about" className="content_link">
               About Us
             </Link>
@@ -56,7 +53,7 @@ export default function Navbar() {
                 navigate("/404");
               }}
             >
-              Buy Now
+              Pre-Order
             </button>
           </div>
         </div>
@@ -82,16 +79,7 @@ export default function Navbar() {
           </div>
           <div className="navbar_links">
             <Link
-              to="/#"
-              className="content_link"
-              onClick={handleToggle}
-              onKeyDown={handleToggle}
-              role="presentation"
-            >
-              Scientific Cleaning
-            </Link>
-            <Link
-              to="/#"
+              to="/about"
               className="content_link"
               onClick={handleToggle}
               onKeyDown={handleToggle}

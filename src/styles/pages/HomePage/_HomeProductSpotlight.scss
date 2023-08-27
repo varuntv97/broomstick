@@ -2,16 +2,14 @@
   overflow: hidden;
   .spotLight_wrapper {
     margin: 0 auto;
-    // height: calc(90vh - 2em);
     @include media(">=desktop") {
       width: $max-width;
     }
     .sectionHeading {
-      font-weight: bolder;
+      font-weight: 700;
       text-align: center;
       @include media(">=desktop") {
-        font-size: 45px;
-        margin: 10px 0px;
+        font-size: 34px;
       }
       @include media("<tablet") {
         font-size: 30px;
@@ -21,12 +19,12 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
+      // grid-column-gap: 10px;
+      // grid-row-gap: 10px;
       @include media("<tablet") {
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 2em;
       }
       .spotLight_items {
         // &:nth-child(7) {
@@ -41,34 +39,41 @@
             grid-row-gap: 0px;
           }
           .spotLight_item__left {
-            transform: scale(0.7);
-            justify-self: center;
+            justify-self: flex-start;
             align-self: center;
+            @include media(">=desktop") {
+              transform: scale(0.6);
+            }
             @include media("<tablet") {
+              justify-self: center;
                 height: 150px;
                 width: 150px;
             }
           }
           .spotLight_item__right {
-            justify-self: center;
+            justify-self: flex-start;
             align-self: center;
+            @include media(">=desktop") {
+              margin-left: -7em;
+            }
             @include media("<tablet") {
+              justify-self: center;
               transform: scale(0.85);
             }
             .spotLight_item__right___title {
-              font-size: xx-large;
-              font-weight: bolder;
-              margin-bottom: 20px;
+              font-size: 26px;
+              font-weight: 500;
+              margin-bottom: 10px;
               @include media("<tablet") {
-                font-size: x-large;
-                margin-bottom: 10px;
+                font-size: 20px;
                 text-align: center;
               }
             }
             .spotLight_item__right___paragraph {
-              font-size: larger;
+              font-size: 20px;
               @include media("<tablet") {
                 text-align: center;
+                font-size: 16px;
               }
             }
           }
