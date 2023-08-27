@@ -18,7 +18,7 @@ function HomeProductFeature2() {
               <StaticImage
                 src="../../images/HomePage/productFeature2.png"
                 alt="background image"
-                style={{ height: "800px", width: "550px" }}
+                style={{ height: "600px", width: "550px" }}
                 objectFit={"scale-down"}
               ></StaticImage>
             </div>
@@ -97,12 +97,11 @@ function HomeProductFeature2() {
           },
           content: {
             position: "absolute",
-            left: `720px`,
-            top: "250px",
+            left: "30%",
             height: "650px",
-            width: "500px",
+            width: "550px",
             backgroundColor: "#ebebeb",
-            overflow: "auto",
+            overflow: "hidden",
           },
         }}
       >

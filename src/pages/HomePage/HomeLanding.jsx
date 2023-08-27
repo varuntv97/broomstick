@@ -58,7 +58,7 @@ export default function HomeLanding() {
                 navigate("/404");
               }}
             >
-              Buy Now
+              Pre-Order
             </button>
           </div>
         </div>
@@ -75,7 +75,8 @@ export default function HomeLanding() {
             }}
           >
             <span style={flexDisplay}>
-              Buy Now <span style={iconStyle}><FaAmazon /></span>
+              Pre-Order
+              {/* <span style={iconStyle}><FaAmazon /></span> */}
             </span>
           </button>
         </div>

@@ -1,5 +1,5 @@
 .productFeature_container {
-  overflow: hidden;
+  // overflow: hidden;
   .productFeature_wrapper {
     margin: 0 auto;
     // height: calc(90vh - 2em);
@@ -12,15 +12,8 @@
     .productFeature_left {
       justify-self: center;
       align-self: center;
-      .productFeature_left__image {
-        @include media(">=desktop") {
-          // transform: scale(0.85)
-        }
-      }
     }
     .productFeature_right {
-      justify-self: center;
-      align-self: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -30,25 +23,27 @@
       height: 100%;
       .productFeature_right__title {
         h1 {
-          font-size: 50px;
-          line-height: 1.25em;
-          font-weight: bolder;
+          font-size: 22px;
+          font-weight: 500;
           text-align: center;
+          @include media(">=desktop") {
+            font-size: 34px;
+          }
         }
       }
       .productFeature_right__button {
         .button {
-          padding: 20px 90px;
+          padding: 12px 50px;
           p {
-            font-size: 25px;
+            font-size: 16px;
             text-align: center;
           }
         }
       }
       .productFeature_right__paragraph {
         h1 {
-          font-size: 40px;
-          line-height: 1.25em;
+          font-size: 26px;
+
           text-align: center;
         }
         .ProductFeature_button {
@@ -62,7 +57,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              font-size: 20px;
+              font-size: 16px;
               text-align: center;
             }
           }
@@ -72,29 +67,30 @@
   }
 }
 .productFeature_form_wrapper {
-  width: calc($max-width - 20%);
   margin: 0 auto;
   margin-bottom: 25px;
+  @include media(">=desktop") {
+    width: calc($max-width - 20%);
+  }
   .productFeature_form {
     background-color: $secondary-color;
     padding: 30px;
     border-radius: 10px;
     h1 {
-      font-size: 30px;
-      line-height: 1.25em;
+      font-size: 20px;
     }
     input[type="text"] {
       width: 80%;
-      padding: 20px;
+      padding: 16px;
       margin: 15px auto;
       box-sizing: border-box;
       border-radius: 10px;
       border: none;
     }
     button {
-      margin: auto 15px;
+      margin: auto 10px;
       p {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
       }
     }
@@ -104,8 +100,8 @@
   padding: 30px;
   h1 {
     text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 20px;
   }
   ul {
@@ -123,9 +119,9 @@
       }
 
       span {
-        font-weight: bold;
+        font-weight: 500;
         color: $primary-color;
-        font-size: larger;
+        font-size: 18px;
       }
     }
   }
