@@ -40,9 +40,12 @@ export default function Navbar() {
             <Link to="/about" className="content_link">
               About Us
             </Link>
-            <Link to="/#" className="content_link">
+            <Link to="/contactUs" className="content_link">
               Contact Us
             </Link>
+            {/* <Link to="/faqs" className="content_link">
+              FAQs
+            </Link> */}
             {/* <Link to="/#" className="content_link">
               Buy Now
             </Link> */}
@@ -50,7 +53,7 @@ export default function Navbar() {
               style={marginLeft}
               className={"button_dark"}
               onClick={() => {
-                navigate("/404");
+                navigate("/pre-order");
               }}
             >
               Pre-Order
@@ -88,7 +91,7 @@ export default function Navbar() {
               About Us
             </Link>
             <Link
-              to="/#"
+              to="/contactUs"
               className="content_link"
               onClick={handleToggle}
               onKeyDown={handleToggle}
@@ -97,13 +100,13 @@ export default function Navbar() {
               Contact Us
             </Link>
             <Link
-              to="/#"
+              to="/pre-order"
               className="content_link"
               onClick={handleToggle}
               onKeyDown={handleToggle}
               role="presentation"
             >
-              Buy Now
+              Pre-Order
             </Link>
           </div>
         </div>

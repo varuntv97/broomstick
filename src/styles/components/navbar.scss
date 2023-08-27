@@ -72,19 +72,19 @@
   }
 }
 .mobile_navbar {
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
   z-index: 900;
-  height: 100vh;
   position: fixed;
   // background-image: repeating-linear-gradient(
-  //   to top,
-  //   $secondary-color 10px,
-  //   $primary-color 30px
-  // );
-  top: 0;
-  right: 0;
-  .navbar_container {
-    height: 100%;
+    //   to top,
+    //   $secondary-color 10px,
+    //   $primary-color 30px
+    // );
+    top: 0;
+    right: 0;
+    .navbar_container {
+      height: 100vh;
     box-shadow: 2px 0 5px rgba(136, 124, 124, 0.3);
     padding: 3em;
     @include media(">=tablet") {
@@ -129,7 +129,7 @@
     z-index: -1;
     display: block;
     position: absolute;
-    background: linear-gradient(180deg, $secondary-color 90%, transparent);
+    background: linear-gradient(180deg, $secondary-color 100%, transparent);
   }
 }
 .isOpened {

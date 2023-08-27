@@ -33,7 +33,7 @@ function HomeProductFeature2() {
               <button
                 className={"button_dark button"}
                 onClick={() => {
-                  navigate("/404");
+                  navigate("/pre-order");
                 }}
               >
                 <p>Pre Order</p>

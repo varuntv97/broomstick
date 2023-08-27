@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player";
 
 function HomeUntoldStory() {
   return (
@@ -8,17 +9,9 @@ function HomeUntoldStory() {
           <h1>The Untold Story</h1>
         </div>
         <div className="videoWrapper">
-          <div className="video">
-          <iframe
-            src="https://www.youtube.com/watch?v=OjnzbhpY108"
-            title="Official Video on YouTube"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
-            webkitallowfullscreen="true"
-            mozallowfullscreen="true"
-            allowFullScreen
-          />
-          </div>
+        <center style={{ margin: "2em" }}>
+          <ReactPlayer url="https://youtu.be/Nw_-6mIdbyg" />
+        </center>
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import {
-  FaAmazon,
+  // FaAmazon,
   FaInstagram,
-  FaTwitter,
+  FaLinkedin,
   FaLocationDot,
   FaRegEnvelope,
   FaPhone,
@@ -31,33 +31,32 @@ export default function Footer() {
           <div className="footer__container__item">
             <h1>Quick Links</h1>
             <div className="footer__container__item__list">
-              <Link to="/#">Scientific Cleaning</Link>
-              <Link to="/#">About Us</Link>
-              <Link to="/#">Contact Us</Link>
-              <Link to="/#">FAQs</Link>
-              <Link to="/#">Buy Now</Link>
+              <Link to="/about">About Us</Link>
+              <Link to="/contactUs">Contact Us</Link>
+              {/* <Link to="/#">FAQs</Link> */}
+              <Link to="/pre-order">Pre-Order</Link>
             </div>
           </div>
           <div className="footer__container__item">
             <h1>Check Us Out</h1>
             <div className="footer__container__item__list">
-              <Link to="/#" style={flexDisplay}>
+              {/* <Link to="/#" style={flexDisplay}>
                 <span style={iconStyle}>
                   <FaAmazon />
                 </span>
                 Amazon Link
-              </Link>
-              <Link to="/#" style={flexDisplay}>
+              </Link> */}
+              <Link to="http://broomstick.co.in/" style={flexDisplay}>
                 <span style={iconStyle}>
                   <FaInstagram />
                 </span>
-                Instagram Link
+                Broomstick
               </Link>
-              <Link to="/#" style={flexDisplay}>
+              <Link to="https://www.linkedin.com/company/broomstick-co-in/" style={flexDisplay}>
                 <span style={iconStyle}>
-                  <FaTwitter />
+                  <FaLinkedin />
                 </span>
-                Twitter Link
+                Broomstick
               </Link>
             </div>
           </div>
@@ -68,19 +67,19 @@ export default function Footer() {
                 <span style={iconStyle}>
                   <FaLocationDot />
                 </span>
-                Location
+                Mysuru, Karnataka.
               </Link>
-              <a href="mailto: contact@xyz6767.com" style={flexDisplay}>
+              <a href="mailto:jainmehul225@gmail.com" style={flexDisplay}>
                 <span style={iconStyle}>
                   <FaRegEnvelope />
                 </span>
-                Email
+                jainmehul225@gmail.com
               </a>
-              <a href="tel:+910000000000" style={flexDisplay}>
+              <a href="tel:+918139978999" style={flexDisplay}>
                 <span style={iconStyle}>
                   <FaPhone />
                 </span>
-                Phone
+                +91 8139978999
               </a>
             </div>
           </div>

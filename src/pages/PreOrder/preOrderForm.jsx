@@ -24,7 +24,7 @@ export default function PreOrderForm(){
                     style={{backgroundColor:'#ffff',marginBottom:'1em'}}
                 />
                 <TextField id="outlined-basic" label="Remarks" variant="outlined" style={{backgroundColor:'#ffff',marginBottom:'1em'}} />
-                <Button variant="contained" style={{width:'200px'}}>Pre-Order</Button>
+                <Button  className={"button_dark button"} variant="contained" style={{width:'200px'}}>Pre-Order</Button>
             </div>
         </div>
     )

@@ -1,20 +1,20 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { navigate } from "gatsby";
-import { FaAmazon } from "react-icons/fa6";
+// import { FaAmazon } from "react-icons/fa6";
 
 export default function HomeLanding() {
   const scale = {
     transform: "scale(1.5)",
   };
 
-  const iconStyle = {
-    marginLeft: "0.75em",
-    backgroundColor: '#ffffff',
-    borderRadius: '50%',
-    color: 'black',
-    padding: '0.5em',
-  };
+  // const iconStyle = {
+  //   marginLeft: "0.75em",
+  //   backgroundColor: '#ffffff',
+  //   borderRadius: '50%',
+  //   color: 'black',
+  //   padding: '0.5em',
+  // };
 
   const flexDisplay = {
     display: "flex",
@@ -55,7 +55,7 @@ export default function HomeLanding() {
               style={scale}
               className={"button_light button"}
               onClick={() => {
-                navigate("/404");
+                navigate("/pre-order");
               }}
             >
               Pre-Order

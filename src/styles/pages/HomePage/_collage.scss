@@ -1,0 +1,29 @@
+.collage_container{
+    @include media (">=desktop"){
+        height: 70vh;
+    }
+    .collage_image__large{
+        display: none;
+        @include media (">=desktop"){
+            display: block;
+        }
+    }
+    .collage_image__small{
+        display: none;
+        @include media ("<tablet"){
+            display: block;
+            transform: scale(1.2);
+        }
+    }
+    .button_wrapper{
+        @include media ('>=desktop'){
+            margin: 2em 0;
+        }
+        button{
+            @include media ('<tablet'){
+                margin-top: 2em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
