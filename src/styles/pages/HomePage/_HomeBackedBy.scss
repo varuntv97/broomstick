@@ -1,0 +1,33 @@
+.backedByContainer {
+  overflow: hidden;
+  background-color: $secondary-color;
+  .backedByWrapper {
+    margin: 0 auto;
+    height: calc(70vh - 2em);
+    @include media(">=desktop") {
+      max-width: $max-width;
+    }
+    .backedBy_title {
+      h1 {
+        font-weight: bolder;
+        text-align: center;
+        @include media(">=desktop") {
+          font-size: 45px;
+          margin: 10px 0px;
+        }
+        @include media("<tablet") {
+          font-size: 30px;
+        }
+      }
+    }
+    .backedBy_grid1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px;
+      @include media("<tablet") {
+      }
+    }
+  }
+}
