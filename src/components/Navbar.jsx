@@ -40,7 +40,7 @@ export default function Navbar() {
             <Link to="/#" className="content_link">
               Scientific Cleaning
             </Link>
-            <Link to="/#" className="content_link">
+            <Link to="/about" className="content_link">
               About Us
             </Link>
             <Link to="/#" className="content_link">
