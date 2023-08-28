@@ -17,5 +17,15 @@
     .preorder_form_box{
         display: flex;
         flex-direction: column;
+        .buttonWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+          .button{
+              @include media ('>=desktop'){
+                  width: 200px;
+              }
+          }
     }
 }

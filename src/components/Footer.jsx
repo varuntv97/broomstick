@@ -46,13 +46,21 @@ export default function Footer() {
                 </span>
                 Amazon Link
               </Link> */}
-              <Link to="http://broomstick.co.in/" style={flexDisplay}>
+              <Link
+                target="_blank"
+                to="http://broomstick.co.in/"
+                style={flexDisplay}
+              >
                 <span style={iconStyle}>
                   <FaInstagram />
                 </span>
                 Broomstick
               </Link>
-              <Link to="https://www.linkedin.com/company/broomstick-co-in/" style={flexDisplay}>
+              <Link
+                target="_blank"
+                to="https://www.linkedin.com/company/broomstick-co-in/"
+                style={flexDisplay}
+              >
                 <span style={iconStyle}>
                   <FaLinkedin />
                 </span>
@@ -63,7 +71,11 @@ export default function Footer() {
           <div className="footer__container__item">
             <h1>Contact Us</h1>
             <div className="footer__container__item__list">
-              <Link to="/#" style={flexDisplay}>
+              <Link
+                target="_blank"
+                to="https://www.google.com/maps/place/broomstick+india/@12.2798313,76.6384806,17z/data=!3m1!4b1!4m6!3m5!1s0x3baf65016816ea4f:0xf8cff6e6e07ca97e!8m2!3d12.2798313!4d76.6410555!16s%2Fg%2F11t6gdv_rk?entry=ttu"
+                style={flexDisplay}
+              >
                 <span style={iconStyle}>
                   <FaLocationDot />
                 </span>
@@ -88,7 +100,11 @@ export default function Footer() {
       <div className="footer_infobar">
         <div className="footer_infobar__container">
           <p>Copyright © 2023</p>
-          <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Privacy Policy
           </a>
         </div>
