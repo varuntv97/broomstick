@@ -19,7 +19,7 @@ function HomeProductFeature2() {
                 src="../../images/HomePage/productFeature2.png"
                 alt="background image"
                 style={{ height: "600px", width: "550px" }}
-                objectFit={"scale-down"}
+                objectFit={"contain"}
               ></StaticImage>
             </div>
           </div>

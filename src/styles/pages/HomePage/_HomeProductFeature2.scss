@@ -2,26 +2,35 @@
   // overflow: hidden;
   .productFeature_wrapper {
     margin: 0 auto;
-    // height: calc(90vh - 2em);
     display: grid;
     @include media(">=desktop") {
-      max-width: $max-width;
+      max-width: calc($max-width - 0%);
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
     }
     .productFeature_left {
       justify-self: center;
       align-self: center;
+      .productFeature_left__image{
+        @include media ('>=desktop'){
+          margin-left: 5em;
+        }
+      }
     }
     .productFeature_right {
+      justify-self: center;
+      align-self: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 10%;
-      width: 100%;
       height: 100%;
+      @include media ('>=desktop'){
+        margin-right: 5em;
+      }
       .productFeature_right__title {
+        width: 100%;
         h1 {
           font-size: 22px;
           font-weight: 500;

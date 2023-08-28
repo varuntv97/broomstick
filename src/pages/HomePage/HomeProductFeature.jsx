@@ -22,7 +22,7 @@ function HomeProductFeature() {
                         SLEEK
                     </h1>
                     <span>
-                    With our moisture adding technology and optimized hardware we made a sleek, slim device built to last
+                    With our moisture adding technology <br/> and optimized hardware <br/> we made a sleek, slim device <br/> built to last
                     </span>
                 </center>
             </div>
@@ -32,7 +32,7 @@ function HomeProductFeature() {
                         SWIFT
                     </h1>
                     <span>
-                    Unique U-Joint <br/> + <br/>Aptly positioned center of gravity <br/> = <br/> exceptional maneuverability and comprehensive floor cleaning
+                    Unique U-Joint plus <br/> + <br/> positioned center of gravity <br/>  = <br/> exceptional maneuverability and <br/> comprehensive floor cleaning
                     </span>
                 </center>
             </div>
