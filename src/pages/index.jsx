@@ -9,12 +9,14 @@ import HomeProductFeature2 from "./HomePage/HomeProductFeature2"
 import HomeBackedBy from "./HomePage/HomeBackedBy"
 import Faqs from "./FAQs/Faqs"
 import Collage from "./HomePage/Collage"
+import HomeProductFeatures from "./HomePage/HomeProductFeatures"
 
 const IndexPage = () => {
   return (
     <Layout>
       <HomeLanding/>
-      <HomeProductFeature/>
+      <HomeProductFeatures></HomeProductFeatures>
+      {/* <HomeProductFeature/> */}
       <HomeProductSpotlight/>
       <HomeUntoldStory/>
       <HomeProductFeature2/>
