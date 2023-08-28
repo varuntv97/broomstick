@@ -18,8 +18,6 @@ function HomeProductFeature2() {
               <StaticImage
                 src="../../images/HomePage/productFeature2.png"
                 alt="background image"
-                style={{ height: "600px", width: "550px" }}
-                objectFit={"contain"}
               ></StaticImage>
             </div>
           </div>
