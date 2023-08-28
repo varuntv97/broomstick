@@ -1,11 +1,10 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
 
 function Contact() {
   return (
     <div className="contact_form">
-      <h3>Reserve Yours Today!</h3>
+      <h3>Get in touch with us!</h3>
       <div className="contact_form_box">
         <TextField
           id="outlined-basic"
@@ -32,9 +31,11 @@ function Contact() {
           rows={4}
           style={{ backgroundColor: "#ffff", marginBottom: "1em" }}
         />
-        <Button className={"button_dark button"} variant="contained" style={{ width: "200px" }}>
+        <div className="buttonWrapper">
+        <button className={"button_dark button"}>
           Send
-        </Button>
+        </button>
+        </div>
       </div>
     </div>
   );
