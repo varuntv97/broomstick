@@ -18,12 +18,7 @@
         }
         .about_landing_container__text{
             text-align: center;
-            display: none;
             padding: 2em 0 0 0;
-            @include media('>=desktop'){
-                display: block;
-
-            }
             
         }
         .about_landing_container__text-2{

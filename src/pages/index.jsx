@@ -7,7 +7,7 @@ import HomeProductSpotlight from "./HomePage/HomeProductSpotlight"
 import HomeUntoldStory from "./HomePage/HomeUntoldStory"
 import HomeProductFeature2 from "./HomePage/HomeProductFeature2"
 import HomeBackedBy from "./HomePage/HomeBackedBy"
-import Faqs from "./FAQs/Faqs"
+import Faqs from "./HomePage/HomeFAQs"
 import Collage from "./HomePage/Collage"
 import HomeProductFeatures from "./HomePage/HomeProductFeatures"
 

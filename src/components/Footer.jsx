@@ -9,6 +9,7 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 import "../styles/components/footer.scss";
+import pdf from '../../static/privacyPolicy.pdf'
 
 export default function Footer() {
   // icon and link style
@@ -101,7 +102,7 @@ export default function Footer() {
         <div className="footer_infobar__container">
           <p>Copyright © 2023</p>
           <a
-            href="https://www.google.com/"
+            href={pdf}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import "../styles/components/navbar.scss";
+import {FaHouseChimney} from "react-icons/fa6"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,15 +38,18 @@ export default function Navbar() {
           </div>
           {/* desktop */}
           <div className="navbar_content">
+            <Link to="/" className="content_link">
+              <FaHouseChimney/>
+            </Link>
             <Link to="/about" className="content_link">
               About Us
             </Link>
             <Link to="/contactUs" className="content_link">
               Contact Us
             </Link>
-            {/* <Link to="/faqs" className="content_link">
+            <Link to="/faqs" className="content_link">
               FAQs
-            </Link> */}
+            </Link>
             {/* <Link to="/#" className="content_link">
               Buy Now
             </Link> */}
@@ -82,6 +86,15 @@ export default function Navbar() {
           </div>
           <div className="navbar_links">
             <Link
+              to="/"
+              className="content_link"
+              onClick={handleToggle}
+              onKeyDown={handleToggle}
+              role="presentation"
+            >
+              Home
+            </Link>
+            <Link
               to="/about"
               className="content_link"
               onClick={handleToggle}
@@ -98,6 +111,15 @@ export default function Navbar() {
               role="presentation"
             >
               Contact Us
+            </Link>
+            <Link
+              to="/faqs"
+              className="content_link"
+              onClick={handleToggle}
+              onKeyDown={handleToggle}
+              role="presentation"
+            >
+              FAQs
             </Link>
             <Link
               to="/pre-order"
