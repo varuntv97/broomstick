@@ -42,5 +42,23 @@
                 width: 50%;
             }
         }
+        .videoWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media ('<tablet'){
+              height: 40vh;
+            }
+            .video {
+              background-color: white;
+              @include media ('<tablet'){
+                transform: scale(0.6);
+              }
+              @include media(">=desktop") {
+                // height: 40vh;
+                // width: 60vw;
+              }
+            }
+          }
     }
 }

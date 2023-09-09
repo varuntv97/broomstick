@@ -9,7 +9,7 @@ function HomeUntoldStory() {
           <h1>The Untold Story</h1>
         </div>
         <div className="videoWrapper">
-        <center style={{ margin: "2em" }}>
+        <center className="video" style={{ margin: "2em" }}>
           <ReactPlayer url="https://youtu.be/Nw_-6mIdbyg" />
         </center>
         </div>

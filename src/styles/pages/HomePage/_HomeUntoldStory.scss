@@ -1,7 +1,7 @@
 .untoldStory_container {
   overflow: hidden;
   background-color: $secondary-color;
-//   height: 50vh;
+  //   height: 50vh;
   .untoldStory_wrapper {
     margin: 20px auto;
     @include media(">=desktop") {
@@ -23,11 +23,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include media("<tablet") {
+        height: 40vh;
+      }
       .video {
         background-color: white;
+        @include media("<tablet") {
+          transform: scale(0.6);
+        }
         @include media(">=desktop") {
-          height: 40vh;
-          width: 60vw;
+          // height: 40vh;
+          // width: 60vw;
         }
       }
     }

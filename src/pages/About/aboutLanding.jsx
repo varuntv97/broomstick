@@ -24,9 +24,11 @@ export default function AboutLanding() {
           what motivated us to develop a device which would help an everyday
           citizen of our country do the everyday job of cleaning their home.
         </p>
-        <center style={{ margin: "2em" }}>
+        <div className="videoWrapper">
+        <center className="video" style={{ margin: "2em" }}>
           <ReactPlayer url="https://youtu.be/sNfuho7CXRY" />
         </center>
+        </div>
       </div>
     </div>
   );
